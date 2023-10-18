@@ -7,7 +7,7 @@
 }
 
 body {
-    height: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,6 +15,7 @@ body {
     background-image: url(images/bg-mobile.svg);
     background-repeat: no-repeat;
 }
+
 :root {
     /*Color Primary*/
 
@@ -32,17 +33,24 @@ body {
 .container {
     padding: 10px;;
     width: 90vw;
-    padding: 10px;
 }
 
+/*LOGO AND MOCKUPS*/
+
 .logo {
+    margin-top: 30px;
+}
+
+.logo img {
     width: 150px;
 }
 
 .mockups {
     width: 100%;
-    margin: 65px 0;
+    margin: 30px 0 65px 0;
 }
+
+/*TEXT*/
 
 .text {
     font-family: var(--font-p);
@@ -77,6 +85,8 @@ body {
     background: var(--Soft-Magenta);
     color: white;
 }
+
+/*ICONS*/
 
 .rs {
     display: flex;
@@ -122,7 +132,42 @@ body {
     border: 1px solid var(--Soft-Magenta);
 }
 
+/*MEDIA QUERY*/
+
+@media screen and (min-width:800px){
+    body {
+        background-image: url(images/bg-desktop.svg);
+    }
+    
+    .logo{
+        
+    }
+
+    .container-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text {
+        width: 540px;
+        text-align: left;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .text h1 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .rs {
+        width: 80vw;
+        justify-content: flex-end;
+    }
+}
 
 
 .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: white; }
