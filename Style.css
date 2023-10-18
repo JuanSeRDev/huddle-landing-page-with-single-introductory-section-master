@@ -137,11 +137,9 @@ body {
 @media screen and (min-width:800px){
     body {
         background-image: url(images/bg-desktop.svg);
+
     }
-    
-    .logo{
-        
-    }
+
 
     .container-text {
         display: flex;
